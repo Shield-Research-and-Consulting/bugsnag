@@ -52,7 +52,7 @@ extension BugsnagReporter {
 
         let headers: HTTPHeaders = [
             "Bugsnag-Api-Key": configuration.apiKey,
-            "Bugsnag-Payload-Version": "4"
+            "Bugsnag-Payload-Version": "5"
         ]
 
         return self.client.post("https://notify.bugsnag.com", headers: headers, beforeSend: { req in
